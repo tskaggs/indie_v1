@@ -1,0 +1,26 @@
+{{#foreach posts}}
+  <section class="flex font-sans pb-5">
+    <a href="{{url}}" class="flex-none w-48 relative">
+      <img src="{{feature_image}}" alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}" class="absolute inset-0 w-full h-full object-cover" />
+    </a>
+    <form class="flex-auto p-6">
+      <div class="flex flex-wrap">
+        <a href="{{url}}" class="flex-auto text-base font-medium text-slate-900">
+          {{title}}
+        </a>
+        <p class="w-full flex-none text-sm font-normal text-slate-700 mt-2">
+          {{excerpt words="26"}}
+          <a href="{{url}}">Read more</a>
+        </p>
+        <div class="w-full flex-none text-sm font-light text-slate-700 mt-2">
+          {{tags prefix=(t " on ")}}
+          <time datetime="{{date format='YYYY-MM-DD'}}">
+            {{date format="DD MMMM YYYY"}}
+          </time>
+        </div>
+      </div>
+    </form>
+  </section>
+{{/foreach}}
+
+{{pagination}}
