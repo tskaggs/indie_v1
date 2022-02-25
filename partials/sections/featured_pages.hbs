@@ -1,0 +1,26 @@
+{{#get "pages" filter="featured:true" limit="all" include="tags" as |featured|}}
+  <section class="flex font-sans pb-5">
+    <div>
+      <div class="flex-auto text-lg font-bold text-slate-900 pb-6">
+        <div class="flex justify-between pb-2">
+          <div>Featured Pages</div>
+        </div>
+      </div>
+      {{#if featured}}
+      {{#foreach featured}}
+      <div class="flex-auto pb-6">
+        <div class="flex flex-wrap">
+          <a href="{{url}}" class="flex-auto text-base font-medium text-slate-900">
+            🔗 {{title}}
+          </a>
+        </div>
+      </div>
+      {{/foreach}}
+      {{else}}
+      <span class="flex-auto text-base font-bold text-slate-900">
+        No featured pages at this time. 😅
+      </span>
+      {{/if}}
+    </div>
+  </section>
+{{/get}}

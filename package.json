@@ -91,9 +91,19 @@
             }
         },
         "custom": {
-            "featured_section": {
+            "show_mrr": {
                 "type": "boolean",
                 "default": false,
+                "group": "homepage"
+            },
+            "current_mrr": {
+                "type": "text",
+                "default": "0",
+                "group": "homepage"
+            },
+            "goal_mrr": {
+                "type": "text",
+                "default": "0",
                 "group": "homepage"
             }
         }
