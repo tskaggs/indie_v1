@@ -1,23 +1,23 @@
 {{#if @custom.show_mrr}}
 <div class="grid grid-cols-2 gap-1 mb-4">
-  <div class="text-center py-2 border-4 border-slate-200">
+  <div class="text-center py-2 rounded-md bg-white ring-1 ring-green-600 shadow-sm">
     <h1 class="flex-auto text-2xl font-semibold text-slate-900">
       {{#if @custom.current_mrr}}
         {{@custom.current_mrr}}
       {{/if}}
     </h1>
     <h3 class="flex-auto text-base font-semibold text-slate-900">
-      MRR
+      Current MRR 🙌
     </h3>
   </div>
-  <div class="text-center py-2 border-4 border-slate-200">
+  <div class="text-center py-2 rounded-md bg-white ring-1 ring-green-600 shadow-lg">
     <h1 class="flex-auto text-2xl font-semibold text-slate-900">
       {{#if @custom.goal_mrr}}
         {{@custom.goal_mrr}}
       {{/if}}
     </h1>
     <h3 class="flex-auto text-base font-semibold text-slate-900">
-      Goal MRR
+      Goal MRR 🤞
     </h3>
   </div>
 </div>
