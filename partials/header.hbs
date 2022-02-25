@@ -1,9 +1,13 @@
 <header id="gh-head" class="gh-head relative bg-white">
-  <div class="mx-auto">
+  <div class="mx-auto w-full md:w-9/12">
     <div class="flex justify-between items-center py-2 px-4 sm:px-6 md:justify-start md:space-x-10">
-      <nav class=" gh-head-menu justify-start lg:w-0 lg:flex-1 space-x-10">
+      <nav class="gh-head-menu justify-start lg:w-0 lg:flex-1 space-x-10">
         {{navigation}}
       </nav>
+      <div class="justify-start lg:w-0 lg:flex-1 space-x-10">
+        <button class="header-button-subscribe js-popup whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent shadow-sm text-base font-medium text-white bg-rose-600 hover:bg-rose-700"> Subscribe </button>
+        {{!-- {{> customize/subscribe is_popup=true}} --}}
+      </div>
       <div class="flex md:flex space-x-10">
         <a href="{{@site.url}}" class="gh-head-logo text-xl font-medium text-slate-700 hover:text-gray-900">
           {{#if @site.logo}}
@@ -14,12 +18,12 @@
           {{/if}}
         </a>
       </div>
-      <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+      {{!-- <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
         <button class="header-button-subscribe js-popup ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent shadow-sm text-base font-medium text-white bg-rose-600 hover:bg-rose-700"> Subscribe </button>
-        {{!-- {{> customize/subscribe is_popup=true}} --}}
-      </div>
+        {{> customize/subscribe is_popup=true}}
+      </div> --}}
 
-      <a class="gh-burger md:flex-1 lg:w-0" role="button">
+      <a class="gh-burger md:flex items-center justify-end md:flex-1 lg:w-0" role="button">
         <div class="gh-burger-box">
           <div class="gh-burger-inner"></div>
         </div>

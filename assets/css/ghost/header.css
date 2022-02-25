@@ -106,7 +106,7 @@
 
 .gh-burger {
     position: relative;
-    display: none;
+    /* display: none; */
     cursor: pointer;
 }
 
@@ -235,7 +235,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
 /* ---------------------------------------------------------- */
 /* IDs needed to ensure sufficient specificity */
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) { */
     .gh-burger {
         display: inline-block;
     }
@@ -319,10 +319,10 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
     .gh-head-open #gh-head .gh-head-menu {
         display: flex;
     }
-}
+/* } */
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     #gh-head .gh-head-menu {
         font-size: 6vmin;
     }
-}
+} */

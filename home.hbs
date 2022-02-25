@@ -18,24 +18,19 @@
 
 {{> "header"}} {{!-- partials/header.hbs --}}
 
-<main class="gh-main">
+<main class="gh-main w-full md:w-9/12 mx-auto">
     <div class="flex flex-col py-6 px-5 lg:flex-row md:space-x-4">
-        {{!-- {{#if @custom.featured_posts}} --}}
-        <div class="order-2 md:basis-1/4 md:order-1 md:px-5">
-            {{> "sections/mrr"}} {{!-- partials/sections/mrr.hbs --}}
-            {{!-- {{> "sections/featured_posts"}} partials/sections/featured_posts.hbs --}}
-            {{> "sections/featured_pages"}} {{!-- partials/sections/featured_pages.hbs --}}
-        </div>
-        {{!-- {{/if}} --}}
-        <div class="order-1 md:basis-1/2 md:order-2 border-4 border-slate-200 p-5" >
+        {{!-- <div class="order-2 md:basis-1/4 md:order-1 md:px-5">
+            {{> "sections/mrr"}} partials/sections/mrr.hbs
+            {{> "sections/featured_pages"}} partials/sections/featured_pages.hbs
+        </div> --}}
+        <div class="order-1 md:basis-3/5 md:order-2 p-5" >
             {{> "loop"}} {{!-- partials/loop.hbs --}}
         </div>
-        {{!-- {{#if @custom.featured_pages}} --}}
-        <div class="order-3 md:basis-1/4 px-5">
-            {{!-- {{> "sections/featured_pages"}} partials/sections/featured_pages.hbs --}}
+        <div class="order-2 md:basis-2/5 px-5">
+            {{> "sections/mrr"}} {{!-- partials/sections/mrr.hbs --}}
             {{> "sections/featured_posts"}} {{!-- partials/sections/featured_posts.hbs --}}
         </div>
-        {{!-- {{/if}} --}}
     </div>
     {{!-- All content gets inserted here, index.hbs, post.hbs, etc --}}
 
